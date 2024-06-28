@@ -11,7 +11,7 @@ os.environ['SCRAPY_LOG_LEVEL'] = 'DEBUG'
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "ncar_archive"
+BOT_NAME = "my_spider"
 
 SPIDER_MODULES = ["my_spider.spiders"]
 NEWSPIDER_MODULE = "my_spider.spiders"
@@ -74,7 +74,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 #CUSTOM_MIDDLEWARE{
-  #  'ncar_archive.middleware.RandomUserAgentMiddleware': 500,
+  #  'my_spider.middleware.RandomUserAgentMiddleware': 500,
   #  'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
 #}
 
@@ -89,7 +89,7 @@ SPIDER_MIDDLEWARES = {
 
 # Add the middleware to your settings
 #CUSTOM_MIDDLEWARES = {
-    #'ncar_archive.AddAuthHeaderMiddleware': 400,
+    #'my_spider.AddAuthHeaderMiddleware': 400,
 #}
 
 #DOWNLOADER_MIDDLEWARES = {
@@ -113,7 +113,7 @@ EXTENSIONS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   "my_spider.pipelines.NcarArchivePipeline": 300,
+   "my_spider.pipelines.My_spiderPipeline": 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -142,6 +142,6 @@ REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 #http://localhost:8050 not needed since using splash rquest and run it on this local host.
-LOG_FILE = "my_ncar_spider_logs.txt"
+LOG_FILE = "my_spider_logs.txt"
 LOG_ENABLED = True
 LOG_LEVEL = 'DEBUG'
