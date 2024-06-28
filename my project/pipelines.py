@@ -9,7 +9,7 @@ import scrapy
 from itemadapter import ItemAdapter
 import csv
 
-class NcarArchivePipeline:
+class MySpiderPipeline:
 
     def __init__(self):
         self.file_object = None
