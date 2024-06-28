@@ -14,7 +14,7 @@ from scrapy.utils.request import request_fingerprint  # Deprecated
 
 #from scrapy.exceptions import SplashRequestError
 
-class NcarArchiveSpider(Spider):
+class Mypider(Spider):
     name = 'ncar_spider'
     allowed_domains = ['talabat.com']
     start_urls = ['https://www.talabat.com/egypt/elbatal']  # Replace with actual starting URL
