@@ -1,0 +1,12 @@
+{
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "en",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
+    },
+    "lua_script": "C:\\Users\\Hazem EL-Batawy\\OneDrive\\Desktop\\ncar_archive\\ncar_archive\\ncar_archive_script.lua",
+    "render_ajax": true,
+    "url": "https://ncar.gov.sa/archive-guide/6",
+    "wait": 2
+}
