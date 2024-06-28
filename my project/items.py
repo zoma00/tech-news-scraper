@@ -1,11 +1,11 @@
 import scrapy
 
 
-class NcarArchiveItem(scrapy.Item):
+class My_spider(scrapy.Item):
     dochrefs = scrapy.Field()  # Field to store links (URLs)
 
 
-class NcarSpider(scrapy.Spider):
+class MySpider(scrapy.Spider):
     name = 'ncar_spider'  # Unique name for your spider
     start_urls = ['https://ncar.gov.sa/archive-guide/6']  # Starting URL for crawl
 
@@ -23,7 +23,7 @@ class NcarSpider(scrapy.Spider):
             
 
             # Create a new NcarArchiveItem instance and populate it
-            item = NcarArchiveItem()
+            item = MyspiderItem()
             item['dochrefs'] = href
 
             # Yield the populated item
