@@ -16,7 +16,7 @@ from scrapy.utils.request import request_fingerprint  # Deprecated
 
 class NcarArchiveSpider(Spider):
     name = 'ncar_spider'
-    allowed_domains = ['ncar.gov.sa']
+    allowed_domains = ['talabat.com']
     start_urls = ['https://www.talabat.com/egypt/elbatal']  # Replace with actual starting URL
 
     def __init__(self):
