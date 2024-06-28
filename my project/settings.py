@@ -2,7 +2,7 @@ import os
 os.environ['SCRAPY_LOG_LEVEL'] = 'DEBUG'
 
 
-# Scrapy settings for ncar_archive project
+# Scrapy settings for MySpider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -31,7 +31,7 @@ DEFAULT_REQUEST_HEADERS = {
    }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "NcarArchiveResearchScraper/1.0"
+#USER_AGENT = "MyspiderResearchScraper/1.0"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
